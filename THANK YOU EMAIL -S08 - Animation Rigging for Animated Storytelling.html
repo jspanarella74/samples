@@ -1,0 +1,317 @@
+<!DOCTYPE html><html><head>
+  <!-- template date: may 2019 -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="MobileOptimized" content="320">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <title>Unity</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,700" rel="stylesheet" type="text/css">
+
+  <!-- main -->
+  <style type="text/css">
+    :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      /* Shows Dark Mode-Only Content, Like Images */
+      .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+      /* Hides Light Mode-Only Content, Like Images */
+      .light-img { display:none; display:none !important; }
+      /* Custom Dark Mode Background Color */
+      .darkmode { background-color: #121212 !important; }
+      /* Custom Dark Mode Font Colors */
+      h1, h2, p, span, b, strong, td { color: #ffffff !important; }
+    }
+    /* Shows Dark Mode-Only Content, Like Images */
+    [data-ogsc] .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+    /* Hides Light Mode-Only Content, Like Images */
+    [data-ogsc] .light-img { display:none; display:none !important; }
+    /* Custom Dark Mode Background Color */
+    [data-ogsc] .darkmode { background-color: #121212 !important; }
+    /* Custom Dark Mode Font Colors */
+    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b, [data-ogsc] strong, [data-ogsc] td { color: #ffffff !important; }
+  </style>
+  <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700); 
+    @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,700); 
+    td {
+      font-family: 'Roboto', Arial, sans-serif; 
+    }
+    body {
+      margin: 0; 
+      padding: 0; 
+    }
+    img {
+      border: 0; 
+      max-width: 100%; 
+      height: auto; 
+      outline: none; 
+      text-decoration: none; 
+    }
+    table td {
+      border-collapse: collapse; 
+    }
+    strong, b {
+      font-weight: 500; 
+    }
+    .appleLinksUnityBlue a {
+      color: #000000 !important; 
+      text-decoration: none; 
+    }
+    .appleLinksWhite a {
+      color: #ffffff !important; 
+      text-decoration: none; 
+    }
+  </style>
+
+  <!-- desktop -->
+  <style type="text/css">
+    @media only screen and (min-width: 600px) {
+
+    }
+  </style>
+
+  <!-- mobile -->
+  <style type="text/css">
+    @media only screen and (max-width: 600px) {
+      .logo-container {
+        padding: 20px 0 !important;
+      }
+      .browser-view {
+        padding: 32px 0 !important;
+      }
+      .font14 {
+        font-size: 14px !important; 
+        line-height: 22px !important; 
+      }
+      .font16 {
+        font-size: 16px !important; 
+        line-height: 24px !important; 
+      }
+      .header {
+        padding: 0 0 25px !important; 
+        font-size: 14px !important; 
+        line-height: 22px !important; 
+      }
+      .heading {
+        font-size: 20px !important; 
+        line-height: 28px !important; 
+      }
+      .descriptive-label {
+        font-size: 12px !important; 
+        line-height: 20px !important; 
+      }
+      img.logo {
+        width: 66px !important; 
+      }
+      table.table {
+        width: 100% !important; 
+      }
+      td.content,
+      table.content {
+        width: 92% !important; 
+      }
+      td.footer {
+        font-size: 10px !important; 
+      }
+      img {
+        display: block; 
+        width: 100%; 
+      }
+      .responsive {
+        display: block !important;
+        width: 100% !important; 
+        height: auto !important;
+      }
+      .responsive-2 {
+        width: 47% !important;
+      }
+      .responsive-3 {
+        width: 96px !important;
+      }
+      .responsive-4 {
+        display: block;
+      }
+      .hide {
+        display:none;
+      }
+      .heading-gap {
+        line-height: 8px !important; 
+        height: 8px !important; 
+      }
+      .color-gap {
+        height: 50px !important; 
+        line-height: 50px;
+      }
+      .block-gap {
+        line-height: 48px !important; 
+        height: 48px !important; 
+      }
+      .height8 {
+        height: 8px !important;
+        line-height: 8px !important;
+      }
+      .height12 {
+        height: 12px !important;
+        line-height: 12px !important;
+      }
+      .height4 {
+        height: 4px !important;
+        line-height: 4px !important;
+      }
+      .height16 {
+        height: 16px !important;
+        line-height: 16px !important;
+      }
+      .height24 {
+        height: 24px !important;
+        line-height: 24px !important;
+      }
+      .height32{
+        height: 32px !important;
+        line-height: 32px !important;
+      }
+      .height64 {
+        height: 64px !important;
+        line-height: 64px !important;
+      }
+      .width47 {
+        width: 47% !important;
+      }
+      .padding6 {
+        padding: 0 6% !important;
+      }
+      .padding24 {
+        padding: 0 24px !important;
+      }
+      .valign-gap {
+        display: none;
+        height: 0 !mportant;
+        line-height: 0 !important
+      }
+    }
+  </style>
+
+  <!--[if mso]>
+    <style>
+        td {color: #212121; font-family: Arial,sans-serif !important; }
+        a {text-decoration: none !important; }
+  strong, b {font-weight: bold; }
+    </style>
+    <![endif]-->
+  </head>
+  <body class="darkmode" style="margin: 0; padding: 0; width: 100%; -webkit-text-size-adjust: none;" bgcolor="#ffffff">
+    <!-- wrapper -->
+    <table class="table darkmode" style="border-bottom: 1px solid #eeeeee; width: 100%; min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff">
+      <tbody>
+        <!-- header -->
+        <tr>
+          <td class="" align="center">
+            <table class="content" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+              <tbody>
+                <tr>
+                  <td class="logo-container" style="padding: 25px 0;" align="left">
+
+                    <a href="https://unity.com?elqTrackId=5eae4c967ed9480fa5925c1d49db425a&elqTrack=true" target="_blank">
+
+                      <img class="light-img" src="https://img06.en25.com/EloquaImages/clients/Unity/%7B79c9d159-7ce7-4102-890d-ec2d92c486f8%7D_unity-logo-lightmode.png" alt="Unity" style="border: 0 none; width: 77px; height: auto;" width="77" border="0">
+
+                      <!-- The following Dark Mode logo image is hidden 
+    with MSO conditional code and inline CSS, but will be         
+    revealed once Dark Mode is triggered -->
+
+                      <!--[if !mso]><! -->
+                      <div class="dark-img" style="display:none; overflow:hidden; width:0px; max-height:0px; max-width:0px; line-height:0px; visibility:hidden;">
+                        <img src="https://img06.en25.com/EloquaImages/clients/Unity/%7B5da7222a-6e8b-40ab-8daa-ed74896c54b0%7D_unity-master-white.png" alt="Unity" style="border: 0 none; width: 77px; height: auto;" width="77" border="0">
+                      </div>
+                      <!--<![endif]-->
+
+                    </a>
+                  </td>
+                  <td class="browser-view" style="color: #757575; font-family: 'Roboto', Arial, ans-serif; font-weight: 400; font-size: 12px; line-height: 14px;" align="right">
+                    <a href="https://app.response.unity3d.com/e/es?s=~~eloqua..type--emailfield..syntax--siteid..encodeFor--url~~&e=~~eloqua..type--emailfield..syntax--elqemailsaveguid..encodeFor--url~~&elqTrackId=a7fc0838320d4ab99c43a716a87aa41c" style="color: #757575; text-decoration: none;">
+                      <div class="">View in browser</div>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>          
+
+
+        <!-- body -->
+        <tr>
+          <td align="center">
+            <table class="content" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+              <tbody>
+                <tr>
+                  <td class="font14" style="color: #212121; font-family: 'Roboto', Arial, sans-serif; font-weight: 400; font-size: 16px; line-height: 24px;" align="left">
+
+                    <!-- hero 1-->
+                    <div>
+                      <a href="" style="color: #FFFFFF; text-decoration: none">
+                        <img src="https://images.response.unity3d.com/EloquaImages/clients/Unity/%7B6c59ee1a-b7ac-4f30-8e49-1782a0b9bec8%7D_AnimationRigging.gif" alt="Annimation Rigging Demo" width="600" style="display: block; border: 0 none; border-radius: 6px;">
+                      </a>                    
+                      <div style="line-height: 24px; height: 24px;">&nbsp;</div>
+                    </div>
+
+                    <!-- block 1 -->
+                    <div>
+                      Hi <span class=eloquaemail>First_Name___there1</span>,
+                      <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>
+						<div class="height4" style="line-height: 0; height: 0;">&nbsp;</div>
+                      Thank you for your interest in <strong><u>Animation Rigging for Animated Storytelling</u></strong>.
+                      <div class="height16" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                      We hope that you found the session relevant and informative.
+                      <div class="height16" style="line-height: 16px; height: 16px;">&nbsp;</div>						
+                      If you’re ready to talk to a Unity sales representative, get in touch with our <a href="https://create.unity3d.com/unity-sales?_ga=2.158915002.1615637931.1617648290-1784776223.1561409712" style="color: #2196f3; text-decoration: none; font-weight:500;">team</a>. Want to get started with real-time? Purchase Unity Pro <a href="https://store.unity.com/products/unity-pro" style="color: #2196f3; text-decoration: none; font-weight:500;">online</a>.
+                      <div class="height16" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                      If you missed the live session, don’t worry – you can access a recording <a href="https://resources.unity.com/media-entertainment/r2r-animation-rigging" style="color: #2196f3; text-decoration: none; font-weight:500;">here</a>.
+                      <div class="height16" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                      Your feedback is important to us. What worked for you? How can we make sure you have the best
+                      possible experience next time? Please take this 5 minute survey to let us know:
+                      <div style="line-height: 16px; height: 16px;">&nbsp;</div>
+
+                      <table cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                          <tr>
+                            <td class="font14 responsive-4" style="padding: 12px 16px; color: #ffffff; border-radius: 4px; line-height: 19px; font-size: 16px;" bgcolor="#2196F3">
+                              <a href="https://unitysoftware.co1.qualtrics.com/jfe/form/SV_exmf0dtMz5lcV8y?Source=email&Session=2021.07.20" style="color: #FFFFFF; text-decoration: none">
+                                Take a brief Survey
+                              </a>
+                            </td>
+                            <td class="responsive-4" style="padding: 0 8px;">&nbsp;
+                               
+                            </td>
+                            <td class="font14 responsive-4" style="padding: 10px 14px; color: #2196F3; border-radius: 4px; border: 2px solid #2196F3; line-height: 19px; font-size: 16px;">
+                              <a href="https://resources.unity.com/media-entertainment/r2r-animation-rigging" style="color: #2196F3; text-decoration: none">
+                                Watch the recording
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+						<div class="height16" style="line-height: 16px; height: 16px;">&nbsp;</div>		
+                      Don't forget to register for upcoming sessions.<br>
+                      <a href="https://create.unity3d.com/road-to-realtime-registration?utm_campaign=___&utm_content=2021-04-10-Global-Events-Road-to-Realtime-Previs-Follow-Up&utm_medium=email&utm_source=Eloqua&elqTrackId=3e3361472c704e8197be3d802eaeeadd&elq=e6424a32350748b7ab486780215b76bd&elqaid=29920&elqat=1&elqCampaignId=" style="color: #2196f3; text-decoration: none; font-weight:500;"> Register now! </a>
+						<div class="height16" style="line-height: 16px; height: 16px;">&nbsp;</div>
+						Thanks,<br>
+                        The Unity team
+
+                      <div class="block-gap" style="line-height: 56px; height: 56px;">&nbsp;</div>
+                    </div>
+
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </td>
+        </tr>
+      </tbody>
+    </table></body></html>

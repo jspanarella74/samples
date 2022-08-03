@@ -1,0 +1,468 @@
+<!DOCTYPE html><html><head>
+  <!-- template date: may 2019 -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="MobileOptimized" content="320">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <title>Unity</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,700" rel="stylesheet" type="text/css">
+
+  <!-- main -->
+  <style type="text/css">
+    :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      /* Shows Dark Mode-Only Content, Like Images */
+      .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+      /* Hides Light Mode-Only Content, Like Images */
+      .light-img { display:none; display:none !important; }
+      /* Custom Dark Mode Background Color */
+      .darkmode { background-color: #121212 !important; }
+      /* Custom Dark Mode Font Colors */
+      h1, h2, p, span, b, strong, td { color: #ffffff !important; }
+    }
+    /* Shows Dark Mode-Only Content, Like Images */
+    [data-ogsc] .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+    /* Hides Light Mode-Only Content, Like Images */
+    [data-ogsc] .light-img { display:none; display:none !important; }
+    /* Custom Dark Mode Background Color */
+    [data-ogsc] .darkmode { background-color: #121212 !important; }
+    /* Custom Dark Mode Font Colors */
+    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b, [data-ogsc] strong, [data-ogsc] td { color: #ffffff !important; }
+  </style>
+  <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700); 
+    @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,700); 
+    td {
+      font-family: 'Roboto', Arial, sans-serif; 
+    }
+    body {
+      margin: 0; 
+      padding: 0; 
+    }
+    img {
+      border: 0; 
+      max-width: 100%; 
+      height: auto; 
+      outline: none; 
+      text-decoration: none; 
+    }
+    table td {
+      border-collapse: collapse; 
+    }
+    strong, b {
+      font-weight: 500; 
+    }
+    .appleLinksUnityBlue a {
+      color: #000000 !important; 
+      text-decoration: none; 
+    }
+    .appleLinksWhite a {
+      color: #ffffff !important; 
+      text-decoration: none; 
+    }
+  </style>
+
+  <!-- desktop -->
+  <style type="text/css">
+    @media only screen and (min-width: 600px) {
+
+    }
+  </style>
+
+  <!-- mobile -->
+  <style type="text/css">
+    @media only screen and (max-width: 600px) {
+      .logo-container {
+        padding: 20px 0 !important;
+      }
+      .browser-view {
+        padding: 32px 0 !important;
+      }
+      .font14 {
+        font-size: 14px !important; 
+        line-height: 22px !important; 
+      }
+      .font16 {
+        font-size: 16px !important; 
+        line-height: 24px !important; 
+      }
+      .header {
+        padding: 0 0 25px !important; 
+        font-size: 14px !important; 
+        line-height: 22px !important; 
+      }
+      .heading {
+        font-size: 20px !important; 
+        line-height: 28px !important; 
+      }
+      .descriptive-label {
+        font-size: 12px !important; 
+        line-height: 20px !important; 
+      }
+      img.logo {
+        width: 66px !important; 
+      }
+      table.table {
+        width: 100% !important; 
+      }
+      td.content,
+      table.content {
+        width: 92% !important; 
+      }
+      td.footer {
+        font-size: 10px !important; 
+      }
+      img {
+        display: block; 
+        width: 100%; 
+      }
+      .responsive {
+        display: block !important;
+        width: 100% !important; 
+        height: auto !important;
+      }
+      .responsive-2 {
+        width: 47% !important;
+      }
+      .responsive-3 {
+        width: 96px !important;
+      }
+      .responsive-4 {
+        display: block;
+      }
+      .hide {
+        display:none;
+      }
+      .heading-gap {
+        line-height: 8px !important; 
+        height: 8px !important; 
+      }
+      .color-gap {
+        height: 50px !important; 
+        line-height: 50px;
+      }
+      .block-gap {
+        line-height: 48px !important; 
+        height: 48px !important; 
+      }
+      .height8 {
+        height: 8px !important;
+        line-height: 8px !important;
+      }
+      .height12 {
+        height: 12px !important;
+        line-height: 12px !important;
+      }
+      .height4 {
+        height: 4px !important;
+        line-height: 4px !important;
+      }
+      .height16 {
+        height: 16px !important;
+        line-height: 16px !important;
+      }
+      .height24 {
+        height: 24px !important;
+        line-height: 24px !important;
+      }
+      .height32{
+        height: 32px !important;
+        line-height: 32px !important;
+      }
+      .height64 {
+        height: 64px !important;
+        line-height: 64px !important;
+      }
+      .width47 {
+        width: 47% !important;
+      }
+      .padding6 {
+        padding: 0 6% !important;
+      }
+      .padding24 {
+        padding: 0 24px !important;
+      }
+      .valign-gap {
+      	display: none;
+      }
+    }
+  </style>
+
+  <!--[if mso]>
+    <style>
+        td {color: #212121; font-family: Arial,sans-serif !important; }
+        a {text-decoration: none !important; }
+  strong, b {font-weight: bold; }
+    </style>
+    <![endif]-->
+  </head>
+  <body class="darkmode" style="margin: 0; padding: 0; width: 100%; -webkit-text-size-adjust: none;" bgcolor="#ffffff">
+    <!-- wrapper -->
+    <table class="table darkmode" style="border-bottom: 1px solid #eeeeee; width: 100%; min-width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff">
+      <tbody>
+        <!-- header -->
+        <tr>
+          <td class="" align="center">
+            <table class="content" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+              <tbody>
+                <tr>
+                  <td class="logo-container" style="padding: 25px 0;" align="left">
+
+                    <a href="https://unity.com?elqTrackId=5eae4c967ed9480fa5925c1d49db425a&elqTrack=true" target="_blank">
+
+                      <img class="light-img" src="https://img06.en25.com/EloquaImages/clients/Unity/%7B79c9d159-7ce7-4102-890d-ec2d92c486f8%7D_unity-logo-lightmode.png" alt="Unity" style="border: 0 none; width: 77px; height: auto;" width="77" border="0">
+
+                      <!-- The following Dark Mode logo image is hidden 
+    with MSO conditional code and inline CSS, but will be         
+    revealed once Dark Mode is triggered -->
+
+                      <!--[if !mso]><! -->
+                      <div class="dark-img" style="display:none; overflow:hidden; width:0px; max-height:0px; max-width:0px; line-height:0px; visibility:hidden;">
+                        <img src="https://img06.en25.com/EloquaImages/clients/Unity/%7B5da7222a-6e8b-40ab-8daa-ed74896c54b0%7D_unity-master-white.png" alt="Unity" style="border: 0 none; width: 77px; height: auto;" width="77" border="0">
+                      </div>
+                      <!--<![endif]-->
+
+                    </a>
+                  </td>
+                  <td class="browser-view" style="color: #757575; font-family: 'Roboto', Arial, ans-serif; font-weight: 400; font-size: 12px; line-height: 14px;" align="right">
+                    <a href="https://app.response.unity3d.com/e/es?s=~~eloqua..type--emailfield..syntax--siteid..encodeFor--url~~&e=~~eloqua..type--emailfield..syntax--elqemailsaveguid..encodeFor--url~~&elqTrackId=a7fc0838320d4ab99c43a716a87aa41c" style="color: #757575; text-decoration: none;">
+                      <div class="">View in browser</div>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>        
+
+
+        <!-- body -->
+        <tr>
+          <td class="" align="center">
+
+            <table class="content" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+              <tbody><tr>
+                <td class="font14" style="color: #212121; font-family: 'Roboto', Arial, sans-serif; font-weight: 400; font-size: 16px; line-height: 26px;" align="left">
+
+                  <!-- block 1 -->
+
+                  <!-- image -->
+                  <div>
+                      <a href="https://unity.com/solutions/gambling?elqTrackId=c5ad5e524e1e4b1ea614811d62b8d323&elqTrack=true" style="text-decoration:none; color:#ffffff;">
+                      <img style="display: block; border: 0 none; border-radius: 6px;" src="https://images.response.unity3d.com/EloquaImages/clients/Unity/%7B4ee90580-4bf9-407a-9bb0-ee21a0e88ee8%7D_social-casino-email-banner.gif" class="" width="600" alt="Explore Solutions">
+                    </a>
+                    <div style="line-height: 20px; height: 20px;" class="">&nbsp;</div>
+                  </div>
+                  
+                   <div class="heading" style="font-size: 24px; font-weight: 500; line-height: 32px;">
+
+
+</div>
+Welcome to our Unity for Gambling Quarterly Newsletter, where we share industry news, helpful content, customer stories, and more. 
+   <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>
+Want to share what <i>you </i>need from Unity? Take 5 minutes to complete our&nbsp;<a href="https://unitysoftware.co1.qualtrics.com/jfe/form/SV_0AqIX5UUWa7qjfU?elqTrackId=b377438bad1245259b870f387232ddc4&elqTrack=true" style="text-decoration:none; color: #2196F3; line-height:14px;">survey</a>.&nbsp;<div class="height24" style="line-height: 24px; height: 24px;">&nbsp;</div>
+                  
+                  
+                  <!-- block 1 -->
+                  <div>
+                    <table class="table" width="100%" cellspacing="0" cellpadding="0" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="font14 responsive" style="color: #212121; font-family: 'Roboto', Arial, sans-serif; font-weight: 400; font-size: 16px; line-height: 24px;" width="291" valign="top" align="left">
+ <a href="https://www.icelondon.uk.com/exhibitors/unity-technologies-sf?elqTrackId=6051499cd6be4d5fa06d7a0dee77df87&elqTrack=true" style="color: #FFFFFF; text-decoration: none">
+                              <img style="display: block; border: 0 none; border-radius: 6px;" src="https://images.response.unity3d.com/EloquaImages/clients/Unity/%7B7f709fb2-e522-42fc-8b75-6b6aa5bcdc62%7D_Ice-LDN-2022.png" width="291" alt="Las Vegas" class="">
+                            </a>
+                              <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#999999">
+                              <tbody>
+                                <tr>
+                                  <td class="fs14" style="padding: 12px 16px; color: #ffffff; font-weight: 400; font-size: 16px; line-height: 24px;" bgcolor="#999999">
+                                    
+                                    <strong>
+                                      <a href="https://www.icelondon.uk.com/exhibitors/unity-technologies-sf?elqTrackId=6051499cd6be4d5fa06d7a0dee77df87&elqTrack=true" style="text-decoration:none; color:#ffffff;">
+                                        INDUSTRY NEWS
+                                      </a>
+                                    </strong>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                            <strong class="">ICE London 2022
+</strong>
+                            <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                            ICE London was the last major industry show to take place before the global COVID-19 pandemic struck in 2020, but is scheduled to return February 1-3 2022. We hope to see you on the show floor, find us at booth #N1-340!
+
+                            <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div><div class="valign-gap">&nbsp;</div><div class="valign-gap">&nbsp;</div>
+
+                            <a href="https://www.icelondon.uk.com/exhibitors/unity-technologies-sf?elqTrackId=6051499cd6be4d5fa06d7a0dee77df87&elqTrack=true" style="text-decoration:none; color: #2196F3; line-height:14px;">Visit our booth</a>
+
+                           
+                            <div style="line-height: 22px; height: 22px;" class="">&nbsp;</div>
+                          </td>
+                          <td class="responsive" style="line-height:0;" width="18" height="8" align="left">
+                            &nbsp;
+                          </td>
+                          <td class="font14 responsive" style="color: #212121; font-family: 'Roboto', Arial, sans-serif; font-weight: 400; font-size: 16px; line-height: 24px;" width="291" valign="top" align="left">
+                            <a href="https://create.unity.com/multilot?elqTrackId=9ded6da8c53f49de98f9aa21ddee0e86&elqTrack=true" style="color: #FFFFFF; text-decoration: none">
+                              <img style="display: block; border: 0 none; border-radius: 6px;" src="https://images.response.unity3d.com/EloquaImages/clients/Unity/%7Ba6d557ee-c5ad-42a0-a9a0-7e9fd0fbe6b8%7D_Image_Unity_Multilot_Newsletter_%281%29.jpg" width="291" alt="Dragon Crashers" class="">
+                            </a>
+                              <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#999999">
+                              <tbody>
+                                <tr>
+                                  <td class="fs14" style="padding: 12px 16px; color: #ffffff; font-weight: 400; font-size: 16px; line-height: 24px;" bgcolor="#EB417A">
+                                    <strong class="">
+                                      <a href="https://create.unity.com/multilot?elqTrackId=9ded6da8c53f49de98f9aa21ddee0e86&elqTrack=true" style="text-decoration:none; color:#ffffff;">
+                                     PARTNER SPOTLIGHT</a>: MULTILOT</strong>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                            <strong class="">Patented platform for loyalty programs, fan engagement, games &amp; lotteries 
+
+</strong>
+                            <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                           Multilot offers a unique, patented SaaS platform for compliance, player registration, payment services, data protection, etc. A fully certified, intuitive service with outstanding data security, providing the advantages needed to win market shares.
+                      
+<div class="valign-gap">&nbsp;</div>
+                            <a href="https://create.unity.com/multilot?elqTrackId=9ded6da8c53f49de98f9aa21ddee0e86&elqTrack=true" style="text-decoration:none; color: #2196F3; line-height:14px;">Learn more</a>
+                           
+                            
+                            <div style="line-height: 22px; height: 22px;" class="">&nbsp;</div>
+                          </td>
+                        
+                          <!-- 2 cell -->
+                         
+                        </tr>
+                      </tbody>  
+                    </table>
+                    
+                 
+                  </div>
+                  
+                   <!-- block 1 -->
+                  <div>
+                    <table class="table" width="100%" cellspacing="0" cellpadding="0" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="font14 responsive" style="color: #212121; font-family: 'Roboto', Arial, sans-serif; font-weight: 400; font-size: 16px; line-height: 24px;" width="188" valign="top" align="left">
+ <a href="https://resources.unity.com/gambling/eclipse-gaming-real-money-gaming-ddd?elqTrackId=72f1a48753804c50bd87dc10a8c2f8fb&elqTrack=true" style="color: #FFFFFF; text-decoration: none">
+                             <img style="display: block; border: 0 none; border-radius: 6px;" src="https://images.response.unity3d.com/EloquaImages/clients/Unity/%7B9cf69bf4-ddc9-45de-9782-3a7aa6fbce59%7D_Bet_on_Unity.jpg" width="188" alt="Case Study" class="">
+                            </a>
+                            <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#999999">
+                              <tbody>
+                                <tr>
+                                  <td class="fs14" style="padding: 12px 16px; color: #ffffff; font-weight: 400; font-size: 16px; line-height: 24px;" bgcolor="#999999">
+                                    <strong class="">
+                                      <a href="https://resources.unity.com/gambling/eclipse-gaming-real-money-gaming-ddd?elqTrackId=a23ba83e51f643bf802486bc1898f68c&elqTrack=true" style="text-decoration:none; color:#ffffff;">
+                                        WEBINAR SERIES
+                                      </a>
+                                    </strong>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                            <strong>A Conversation with Eclipse Gaming: Switching to Unity
+</strong>
+                            <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                            Join us for a conversation with the team at Eclipse Gaming, where we will discuss their switch from their internal engine to Unity.
+
+
+                        <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>   <div class="valign-gap">&nbsp;</div><div class="valign-gap">&nbsp;</div>
+                         
+<a href="https://resources.unity.com/gambling/eclipse-gaming-real-money-gaming-ddd?elqTrackId=c01ee0ca8da44e859e4f0136568b48e0&elqTrack=true" style="text-decoration:none; color: #2196F3; line-height:14px;">Watch now</a>
+                           
+                            <div style="line-height: 22px; height: 22px;" class="">&nbsp;</div>
+                          </td>
+                          <td class="responsive" style="line-height:0;" width="18" height="8" align="left">
+                            &nbsp;
+                          </td>
+                          <td class="font14 responsive" style="color: #212121; font-family: 'Roboto', Arial, sans-serif; font-weight: 400; font-size: 16px; line-height: 24px;" width="188" valign="top" align="left">
+                             <a href="https://blog.unity.com/games/new-e-book-the-mobile-gaming-trends-you-need-to-know-for-2022-and-beyond?elqTrackId=d346d3c1e4024a8aa7ac5f02b7f5eaf0&elqTrack=true" style="color: #FFFFFF; text-decoration: none">
+                              <img style="display: block; border: 0 none; border-radius: 6px;" src="https://images.response.unity3d.com/EloquaImages/clients/Unity/%7B579fa90a-063c-4344-b092-be539f7d5e48%7D_LP_mobile_graphic_1043x587.jpg" width="188" alt="Exclusive eBook" class="">
+                            </a>
+                                  <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#999999">
+                              <tbody>
+                                <tr>
+                                  <td class="fs14" style="padding: 12px 16px; color: #ffffff; font-weight: 400; font-size: 16px; line-height: 24px;" bgcolor="#EB417A">
+                                    <strong>
+                                      <a href="https://blog.unity.com/games/new-e-book-the-mobile-gaming-trends-you-need-to-know-for-2022-and-beyond?elqTrackId=d346d3c1e4024a8aa7ac5f02b7f5eaf0&elqTrack=true" style="text-decoration:none; color:#ffffff;">
+                                      E-BOOK
+                                        </a>
+                                    </strong>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                            <strong class="">The mobile gaming trends you need to know for 2022 and beyond
+</strong>
+                            <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                            This free download pairs insights gleaned from the Unity team’s years of experience helping customers with the latest market research to provide a snapshot of the mobile gaming market.
+                            <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                          <a href="https://blog.unity.com/games/new-e-book-the-mobile-gaming-trends-you-need-to-know-for-2022-and-beyond?elqTrackId=d346d3c1e4024a8aa7ac5f02b7f5eaf0&elqTrack=true" style="text-decoration:none; color: #2196F3; line-height:14px;">Read the e-book</a>
+                
+                          
+                           
+                            <div style="line-height: 22px; height: 22px;" class="">&nbsp;</div>
+                          </td>
+                          <td class="responsive" style="line-height:0;" width="18" height="8" align="left">
+                            <br>
+                          </td>
+                          <!-- 2 cell -->
+                          <td class="font14 responsive" style="color: #212121; font-family: 'Roboto', Arial, sans-serif; font-weight: 400; font-size: 16px; line-height: 24px;" width="188" valign="top" align="left">
+                            <a href="https://blog.unity.com/games/report-state-of-live-gaming-in-2021?elqTrackId=6305d64fa3e34d7889f411ab1c30b44b&elqTrack=true" style="color: #FFFFFF; text-decoration: none">
+                              <img style="display: block; border: 0 none; border-radius: 6px;" src="https://images.response.unity3d.com/EloquaImages/clients/Unity/%7B4f64e7a8-3b40-40cb-9a5b-832c26054a32%7D_State_of_live_gaming_report.jpg" width="188" alt="Case Study" class="">
+                            </a>
+                               <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#999999">
+                              <tbody>
+                                <tr>
+                                  <td class="fs14" style="padding: 12px 16px; color: #ffffff; font-weight: 400; font-size: 16px; line-height: 24px;" bgcolor="#999999">
+                                    <a href="https://blog.unity.com/games/report-state-of-live-gaming-in-2021?elqTrackId=6305d64fa3e34d7889f411ab1c30b44b&elqTrack=true" style="text-decoration:none; color:#ffffff;"><strong class="" style="border-style: none;">BLOG</strong></a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                            <strong class="">Report: State of live gaming in 2021</strong>
+                            <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                            Rolling out fresh and exciting content has become expected for games of all sizes, but do we know if these updates are actually having a serious impact on success?
+                             <div class="height8" style="line-height: 16px; height: 16px;">&nbsp;</div>
+                              <div class="valign-gap">&nbsp;</div>
+                            
+                          <a href="https://blog.unity.com/games/report-state-of-live-gaming-in-2021?elqTrackId=6305d64fa3e34d7889f411ab1c30b44b&elqTrack=true" style="text-decoration:none; color: #2196F3; line-height:14px;">Read the blog</a>
+                          
+                            
+                            <div style="line-height: 22px; height: 22px;">&nbsp;</div>
+                          </td>
+                        </tr>
+                      </tbody>  
+                    </table>
+                    
+                    <div class="height24" style="line-height: 24px; height: 24px;">&nbsp;</div>
+                  </div>
+
+
+
+                </td>
+                </tr>
+              </tbody></table>
+
+          </td>
+        </tr>
+      </tbody>
+    </table></body></html>
